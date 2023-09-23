@@ -188,3 +188,71 @@ const testimonials = [
         image: "https://randomuser.me/api/portraits/women/6.jpg",
     },
 ]
+
+const projects = [
+    {
+        name: "Trainer Vote",
+        description:
+            "Web-based platform that allows users to vote trainer in passed courses, comparison possibilities with data analysis and visualization.",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "tailwind",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: carrent,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "DATIL - Data Science Interactive Learning",
+        description:
+            "Web application that enables users to learn data science in a interactive way. With a bunch of features like direct output view(like jupyter notebook).",
+        tags: [
+            {
+                name: "react",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "nextjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "python",
+                color: "green-text-gradient",
+            },
+        ],
+        image: jobit,
+        source_code_link: "https://github.com/",
+    },
+    {
+        name: "TML - ThreeJS Models Library",
+        description:
+            "A filterable models comparison platform that allows direct interactions with models into a Web-based 3d world, with a one ecosystem that allows trade and transaction of game-money.",
+        tags: [
+            {
+                name: "nextjs",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "mongodb",
+                color: "green-text-gradient",
+            },
+            {
+                name: "threejs",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: tripguide,
+        source_code_link: "https://github.com/",
+    },
+]
+
+export { services, technologies, experiences, testimonials, projects }
