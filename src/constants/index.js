@@ -161,3 +161,30 @@ const experiences = [
         ],
     },
 ]
+
+const testimonials = [
+    {
+        testimonial:
+            "I thought it was impossible to make a website as beatiful as our product, but Kadir proved me.",
+        name: "Eleni Lee",
+        designation: "CFO",
+        company: "Kadeli",
+        image: "https://randomuser.me/api/portraits/women/4.jpg",
+    },
+    {
+        testimonial:
+            "I've never met a web developer who truly cares about their clients' success like Kadir does.",
+        name: "Michael Brown",
+        designation: "COO",
+        company: "DEF Corp",
+        image: "https://randomuser.me/api/portraits/men/5.jpg",
+    },
+    {
+        testimonial:
+            "After Kadir optimized our website, our traffic increased by 50%. We can't thank them enough!",
+        name: "Shirin Winterer",
+        designation: "CTO",
+        company: "Railcode",
+        image: "https://randomuser.me/api/portraits/women/6.jpg",
+    },
+]
