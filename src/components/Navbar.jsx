@@ -19,7 +19,7 @@ const Navbar = () => {
             setActive("")
             window.scrollTo(0, 0)
           }}>
-
+          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
         </Link>
       </div>
     </nav>
