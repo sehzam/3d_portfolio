@@ -8,7 +8,17 @@ const App = () => {
     <BrowserRouter>
       <div className="relative z-0">
         <div className="bg-hero-pattern bg-cover vg-no-repeat bg-center">
-          
+          <Navbar />
+          <Hero />
+        </div>
+        <About />
+        <Experience />
+        <Tech />
+        <Works />
+        <Feedbacks />
+        <div className="relative z-0">
+          <Contact />
+          <StarsCanvas />
         </div>
       </div>
     </BrowserRouter>
