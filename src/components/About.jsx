@@ -6,6 +6,14 @@ import { styles } from '../styles'
 import { services } from '../constants'
 import { fadeIn, textVariant } from '../utils/motion'
 
+const ServiceCard = ({ index, title, icon }) => {
+  return (
+    <Tilt className="xs:w-[250px] w-full">
+
+    </Tilt>
+  )
+}
+
 const About = () => {
   return (
     <>
