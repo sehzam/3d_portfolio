@@ -18,9 +18,8 @@ const Hero = () => {
             web applications
           </p>
         </div>
-
-        <ComputersCanvas />
       </div>
+      <ComputersCanvas />
     </section>
   )
 }
