@@ -30,6 +30,7 @@ const Hero = () => {
               }}
               transition={{
                 duration: 1.5,
+                repeat: Infinity,
               }}
             />
           </div>
