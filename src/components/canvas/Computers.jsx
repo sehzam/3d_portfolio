@@ -17,6 +17,7 @@ const Computers = () => {
         angle={0.12}
         penumbra={1}
         intensity={1}
+        castShadow
       />
       <primitive
         object={computer.scene}
