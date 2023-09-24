@@ -14,6 +14,7 @@ const Computers = () => {
       <pointLight intensity={1} />
       <primitive
         object={computer.scene}
+        scale={0.75}
       />
     </mesh>
   )
