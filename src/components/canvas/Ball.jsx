@@ -18,6 +18,7 @@ const BallCanvas = ({ icon }) => {
   return (
     <Canvas
       frameloop="demand"
+      shadows
     >
 
     </Canvas>
