@@ -23,7 +23,9 @@ const BallCanvas = ({ icon }) => {
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
+        <OrbitControls
 
+        />
       </Suspense>
     </Canvas>
   )
