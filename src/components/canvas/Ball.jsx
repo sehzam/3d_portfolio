@@ -30,6 +30,7 @@ const BallCanvas = ({ icon }) => {
         />
         <Computers isMobile={isMobile} />
       </Suspense>
+      <Preload all />
     </Canvas>
   )
 }
