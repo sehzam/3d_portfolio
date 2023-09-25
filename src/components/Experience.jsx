@@ -11,7 +11,7 @@ import { textVariant } from '../utils/motion'
 const Experience = () => {
   return (
     <>
-      <motion.div>
+      <motion.div variants={textVariant()}>
 
       </motion.div>
     </>
