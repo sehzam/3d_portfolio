@@ -17,7 +17,10 @@ const Works = () => {
       </motion.div>
 
       <div className="w-full flex">
-        <motion.p>
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+
+        >
 
         </motion.p>
       </div>
