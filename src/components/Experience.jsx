@@ -19,11 +19,14 @@ const ExperienceCard = ({ experience }) => {
         <img
           src={experience.icon}
           alt={experience.company_name}
+          className="w-[60%] h-[60%] object-contain"
         />
       </div>
     }
   >
-    {experience.date}
+    <div>
+      <h3>{experience.title}</h3>
+    </div>
   </VerticalTimelineElement>
 }
 
