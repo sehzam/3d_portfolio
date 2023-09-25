@@ -19,6 +19,7 @@ const Ball = (props) => {
           color="#fff8eb"
           polygonOffset
           polygonOffsetFactor={-5}
+          flatShading
         />
       </mesh>
     </Float>
