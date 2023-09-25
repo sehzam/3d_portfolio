@@ -10,7 +10,11 @@ import { textVariant } from '../utils/motion'
 
 const Experience = () => {
   return (
-    <div>Experience</div>
+    <>
+      <motion.div>
+
+      </motion.div>
+    </>
   )
 }
 
