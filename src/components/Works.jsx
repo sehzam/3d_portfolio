@@ -31,6 +31,7 @@ const Works = () => {
         {projects.map((project, index) => (
           <ProjectCard
             key={`project-${index}`}
+            {...project}
           />
         ))}
       </div>
