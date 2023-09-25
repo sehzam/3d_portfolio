@@ -19,6 +19,7 @@ const BallCanvas = ({ icon }) => {
     <Canvas
       frameloop="demand"
       shadows
+      camera={{ position: [20, 3, 4], fov: 25 }}
     >
 
     </Canvas>
