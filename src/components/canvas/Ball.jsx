@@ -11,7 +11,7 @@ const Ball = (props) => {
 
   return (
     <Float>
-
+      <ambientLight intensity={0.25} />
     </Float>
   )
 }
