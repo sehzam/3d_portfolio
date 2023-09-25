@@ -15,6 +15,12 @@ const Works = () => {
         </p>
         <h2 className={styles.sectionHeadText}>Projects.</h2>
       </motion.div>
+
+      <div className="w-full flex">
+        <motion.p>
+
+        </motion.p>
+      </div>
     </>
   )
 }
