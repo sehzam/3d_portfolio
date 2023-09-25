@@ -25,7 +25,7 @@ const BallCanvas = ({ icon }) => {
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
-
+          maxPolarAngle={Math.PI / 2}
         />
       </Suspense>
     </Canvas>
