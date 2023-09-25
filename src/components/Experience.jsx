@@ -18,7 +18,7 @@ const ExperienceCard = ({ experience }) => {
       <div>
         <img
           src={experience.icon}
-
+          alt={experience.company_name}
         />
       </div>
     }
