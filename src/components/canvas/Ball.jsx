@@ -10,7 +10,9 @@ const Ball = (props) => {
   const [decal] = useTexture([props.imgUrl])
 
   return (
-    <div>Ball</div>
+    <Float>
+
+    </Float>
   )
 }
 
@@ -18,17 +20,13 @@ const BallCanvas = ({ icon }) => {
   return (
     <Canvas
       frameloop="demand"
-      shadows
-      camera={{ position: [20, 3, 4], fov: 25 }}
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense fallback={<CanvasLoader />}>
         <OrbitControls
           enableZoom={false}
-          maxPolarAngle={Math.PI / 2}
-          minPolarAngle={Math.PI / 2}
         />
-        <Computers isMobile={isMobile} />
+        <Ball imgUrl={icon} />
       </Suspense>
       <Preload all />
     </Canvas>
