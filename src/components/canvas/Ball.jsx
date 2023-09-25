@@ -20,6 +20,7 @@ const BallCanvas = ({ icon }) => {
       frameloop="demand"
       shadows
       camera={{ position: [20, 3, 4], fov: 25 }}
+      gl={{ preserveDrawingBuffer: true }}
     >
 
     </Canvas>
