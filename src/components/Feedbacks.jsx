@@ -14,6 +14,12 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image })
       <p>{testimonial}</p>
       <div className="mt-7 flex justify-between items-center gap-1">
         <div className="flex-1 flex flex-col">
+          <p>
+            <span>@</span> {name}
+          </p>
+          <p>
+            {designation} of {company}
+          </p>
 
         </div>
 
