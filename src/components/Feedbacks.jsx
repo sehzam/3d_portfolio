@@ -20,9 +20,8 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image })
           <p className="mt-1 text-secondary text-[12px]">
             {designation} of {company}
           </p>
-
         </div>
-
+        <img src={image} alt={`feedback-by-${name}`} />
       </div>
     </div>
   </motion.div>
