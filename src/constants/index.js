@@ -1,7 +1,6 @@
 import {
     mobile,
     backend,
-    creator,
     web,
     javascript,
     typescript,
@@ -13,7 +12,6 @@ import {
     nodejs,
     mongodb,
     git,
-    figma,
     docker,
     meta,
     starbucks,
@@ -31,8 +29,16 @@ export const navLinks = [
         title: "About",
     },
     {
-        id: "work",
-        title: "Work",
+        id: "experiences",
+        title: "Experiences",
+    },
+    {
+        id: "tech",
+        title: "Technologies",
+    },
+    {
+        id: "works",
+        title: "Works",
     },
     {
         id: "contact",
@@ -52,11 +58,7 @@ const services = [
     {
         title: "Backend Developer",
         icon: backend,
-    },
-    {
-        title: "Content Creator",
-        icon: creator,
-    },
+    }
 ]
 
 const technologies = [
@@ -103,6 +105,10 @@ const technologies = [
     {
         name: "git",
         icon: git,
+    },
+    {
+        name: "docker",
+        icon: docker,
     },
 ]
 
@@ -201,7 +207,7 @@ const projects = [
             },
             {
                 name: "mongodb",
-                color: "blue-text-gradient",
+                color: "green-text-gradient",
             },
             {
                 name: "tailwind",
@@ -222,7 +228,7 @@ const projects = [
             },
             {
                 name: "nextjs",
-                color: "blue-text-gradient",
+                color: "pink-text-gradient",
             },
             {
                 name: "python",

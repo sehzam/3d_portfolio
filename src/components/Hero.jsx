@@ -1,3 +1,4 @@
+import { SectionWrapper } from '../hoc'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { ComputersCanvas } from './canvas'
@@ -11,11 +12,12 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
         <div>
-          <h1 className={`${styles.heroHeadText} text-white`}>Hi, I'm <span className="text-[#915eff]">Kadir</span></h1>
-          <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop 3D visuals, <br className="sm:block hidden" />
-            user interfaces and
-            web applications
+          <h1 className={`${styles.heroHeadText} ml-10 text-white`}>Hi, I'm <span className="text-[#915eff]">Kadir</span></h1>
+          <p className={`${styles.heroSubText} ml-10  mt-2 text-white-100`}>
+            I develop 3D Visuals, <br className="sm:block hidden" />
+            Web and Mobile applications.<br />
+            I'm also briefly knowledged in<br />
+            Data Analysis and Machine Learning Model Development
           </p>
         </div>
       </div>

@@ -7,7 +7,7 @@ import { testimonials } from '../constants'
 const FeedbackCard = ({ index, testimonial, name, designation, company, image }) => (
   <motion.div
     variants={fadeIn("", "spring", index * 0.5, 0.75)}
-    className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full'
+    className='bg-black-200 p-10 rounded-3xl xs:w-[320px] w-full border-x-2 border-x-indigo-500 shadow shadow-xl bg-third'
   >
     <p className="text-white font-black text-[48px]">"</p>
     <div className="mt-1">
@@ -21,7 +21,11 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image })
             {designation} of {company}
           </p>
         </div>
-        <img src={image} alt={`feedback-by-${name}`} />
+        <img
+          src={image}
+          alt={`feedback-by-${name}`}
+          className='w-10 h-10 rounded-full object-cover'
+        />
       </div>
     </div>
   </motion.div>
@@ -30,7 +34,7 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image })
 const Feedbacks = () => {
   return (
     <div className="mt-12 bg-black-100 rounded-[20px]">
-      <div className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px]`}>
+      <div className={`${styles.padding} bg-tertiary rounded-2xl min-h-[300px] border-b-4 border-b-indigo-500`}>
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>What others say</p>
           <h2 className={styles.sectionHeadText}>Testimonials.</h2>
@@ -49,4 +53,4 @@ const Feedbacks = () => {
   )
 }
 
-export default Feedbacks
+export default SectionWrapper(Feedbacks, "")
