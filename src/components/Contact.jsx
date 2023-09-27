@@ -13,6 +13,8 @@ const Contact = () => {
     email: '',
     message: '',
   })
+  const [loading, setLoading] = useState(false)
+
   return (
     <div>Contact</div>
   )
