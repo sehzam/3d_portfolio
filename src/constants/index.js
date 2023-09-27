@@ -1,6 +1,7 @@
 import {
     mobile,
     backend,
+    creator,
     web,
     javascript,
     typescript,
@@ -52,12 +53,16 @@ const services = [
         icon: web,
     },
     {
-        title: "React Native Developer",
+        title: "THREE.JS Developer",
         icon: mobile,
     },
     {
         title: "Backend Developer",
         icon: backend,
+    },
+    {
+        title: "Data Analyst",
+        icon: creator,
     }
 ]
 
@@ -154,8 +159,8 @@ const experiences = [
         ],
     },
     {
-        title: "Full stack Developer",
-        company_name: "Meta",
+        title: "Data Science - Bootcamp",
+        company_name: "Spiced",
         icon: meta,
         iconBg: "#E6DEDD",
         date: "Jan 2023 - Present",
@@ -170,32 +175,71 @@ const experiences = [
 
 const testimonials = [
     {
-        testimonial:
-            "I thought it was impossible to make a website as beatiful as our product, but Kadir proved me.",
-        name: "Eleni Lee",
-        designation: "CFO",
-        company: "Kadeli",
-        image: "https://randomuser.me/api/portraits/women/4.jpg",
+        testimonial: "Kadir's expertise in web development is unmatched. His contributions significantly enhanced our digital presence and user experience.",
+        name: "Isabella White",
+        designation: "UX/UI Designer",
+        company: "WhiteDesigns",
+        image: "https://randomuser.me/api/portraits/women/37.jpg",
     },
     {
-        testimonial:
-            "I've never met a web developer who truly cares about their clients' success like Kadir does.",
-        name: "Michael Brown",
+        testimonial: "We can't thank Kadir enough for his exceptional work. His website optimization efforts have opened up new horizons for our business.",
+        name: "David Turner",
         designation: "COO",
-        company: "DEF Corp",
-        image: "https://randomuser.me/api/portraits/men/5.jpg",
+        company: "TechHorizon Solutions",
+        image: "https://randomuser.me/api/portraits/men/44.jpg",
     },
     {
-        testimonial:
-            "After Kadir optimized our website, our traffic increased by 50%. We can't thank them enough!",
-        name: "Shirin Winterer",
-        designation: "CTO",
-        company: "Railcode",
-        image: "https://randomuser.me/api/portraits/women/6.jpg",
+        testimonial: "Kadir's attention to detail and commitment to excellence shine through in his work. He transformed our website into a top-notch platform.",
+        name: "Sophia Walker",
+        designation: "Marketing Manager",
+        company: "Walker Marketing",
+        image: "https://randomuser.me/api/portraits/women/53.jpg",
     },
+    {
+        testimonial: "We owe our web success to Kadir's skills. His optimizations have catapulted our site's performance and user engagement.",
+        name: "Ava Nelson",
+        designation: "Lead Developer",
+        company: "Nelson Web Solutions",
+        image: "https://randomuser.me/api/portraits/women/70.jpg",
+    },
+    {
+        testimonial: "Kadir's web development expertise has been instrumental in our online growth. Our website now stands out and attracts more users.",
+        name: "Oliver Parker",
+        designation: "Digital Strategist",
+        company: "Parker Digital",
+        image: "https://randomuser.me/api/portraits/men/76.jpg",
+    },
+    {
+        testimonial: "Working with Kadir was a game-changer. He optimized our website's performance, resulting in a noticeable boost in user engagement.",
+        name: "Mia Davis",
+        designation: "Content Manager",
+        company: "ContentCrafters",
+        image: "https://randomuser.me/api/portraits/women/85.jpg",
+    }
 ]
 
 const projects = [
+    {
+        name: "ALI - Alias Listing System",
+        description:
+            "Bash-based alias listing system that allows useful UNIX-like short-access commands",
+        tags: [
+            {
+                name: "bash",
+                color: "blue-text-gradient",
+            },
+            {
+                name: "github",
+                color: "green-text-gradient",
+            },
+            {
+                name: "git",
+                color: "pink-text-gradient",
+            },
+        ],
+        image: carrent,
+        source_code_link: "https://github.com/",
+    },
     {
         name: "Trainer Vote",
         description:
@@ -227,12 +271,12 @@ const projects = [
                 color: "blue-text-gradient",
             },
             {
-                name: "nextjs",
-                color: "pink-text-gradient",
-            },
-            {
                 name: "python",
                 color: "green-text-gradient",
+            },
+            {
+                name: "nextjs",
+                color: "blue-text-gradient",
             },
         ],
         image: jobit,
