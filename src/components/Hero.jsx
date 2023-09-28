@@ -1,7 +1,7 @@
 import React, { Suspense } from 'react'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
-import { ComputersCanvas } from './canvas'
+import { ComputersCanvas, EarthCanvas, CubeCanvas } from './canvas'
 import CanvasLoader from './Loader'
 
 const Hero = () => {
@@ -23,7 +23,9 @@ const Hero = () => {
 
       {/* Wrap your 3D Canvas components with Suspense */}
       <Suspense fallback={<CanvasLoader />}>
+        {/* <CubeCanvas /> */}
         <ComputersCanvas />
+        {/* <EarthCanvas /> */}
       </Suspense>
 
       <div className="absolute xs-bottom-10 bottom-32 w-full flex justify-center items-center">

@@ -60,7 +60,7 @@ const Contact = () => {
               name="message"
               value={form.message}
               onChange={handleChange}
-              placeholder="What's your message to me? Thanks a lot for your Feedback."
+              placeholder="What want you tell me? Thanks a lot for your Feedback!"
               className="bg-tertiary py-4 px-6 text-white rounded-lg outlined-none border-none font-medium placeholder:text-secondary"
             />
           </label>
