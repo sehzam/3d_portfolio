@@ -8,7 +8,7 @@ const Stars = (props) => {
 
   const sphere = random.inSphere(new Float32Array(5000), { radius: 1.2 })
   return (
-    <group rotation={[0, 0, MATH.PI / 4]}>
+    <group rotation={[0, 0, Math.PI / 4]}>
       <Points
         ref={ref}
         positions={sphere}
@@ -16,7 +16,13 @@ const Stars = (props) => {
         frustumCulled
         {...props}
       >
-
+        <PointMaterial
+          transparent
+          color='#f2272c6'
+          size={0.002}
+          sizeAttenuation={true}
+          depthWrite={false}
+        />
       </Points>
 
     </group>
