@@ -1,4 +1,8 @@
-import React from 'react'
+import { OrbitControls, Preload, useGLTF } from "@react-three/drei"
+import { Suspense } from "react"
+import { Canvas } from "react-three-fiber"
+
+import CanvasLoader from '../Loader'
 
 const Earth = () => {
   return (
