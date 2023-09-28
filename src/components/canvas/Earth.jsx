@@ -17,7 +17,9 @@ const EarthCanvas = () => {
     gl={{ preserveDrawingBuffer: true }}
     camera={{}}
   >
+    <Suspense fallback={<CanvasLoader />}>
 
+    </Suspense>
   </Canvas>
 }
 
