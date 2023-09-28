@@ -1,11 +1,11 @@
-import { OrbitControls, Preload, useGLTF } from "@react-three/drei"
+import { OrbitControls, Preload, SpotLight, useGLTF } from "@react-three/drei"
 import { Suspense } from "react"
 import { Canvas } from "react-three-fiber"
 
 import CanvasLoader from '../Loader'
 
 const Laptop = () => {
-    const laptop = useGLTF('/models/asus.gltf')
+    const laptop = useGLTF('/laptop/asus.gltf')
     return (
         <primitive
             object={laptop.scene}
@@ -39,6 +39,7 @@ const LaptopCanvas = () => {
                     maxPolarAngle={Math.PI / 2}
                     minPolarAngle={Math.PI / 2}
                 />
+                <ambientLight intensity={3} />
                 <Laptop />
             </Suspense>
         </Canvas>
