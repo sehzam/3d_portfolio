@@ -184,9 +184,9 @@ const testimonials = [
     },
     {
         testimonial: "Kadir's web development expertise has been instrumental in our online growth. Our website now stands out and attracts more users.",
-        name: "Oliver Parker",
-        designation: "Digital Strategist",
-        company: "Parker Digital",
+        name: "Alex Schenk",
+        designation: "Data Engineer",
+        company: "Schenk GmbH",
         image: "https://randomuser.me/api/portraits/men/76.jpg",
     },
     {

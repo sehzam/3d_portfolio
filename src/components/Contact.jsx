@@ -31,7 +31,15 @@ const Contact = () => {
           onSubmit={handleSubmit}
           className="mt-12 flex flex-col gap-8"
         >
-
+          <span className="text-white font-medium mb-4">Your Name</span>
+          <input
+            type="text"
+            name="name"
+            value={form.name}
+            onChange={handleChange}
+            placeholder="What's your name?"
+            className="bg-tertiary py-4 px-6 text-white rounded-lg outlined-none border-none font-medium placeholder:text-secondary"
+          />
         </form>
       </motion.div>
     </div>
