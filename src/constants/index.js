@@ -1,4 +1,5 @@
 import {
+    ali,
     mobile,
     backend,
     creator,
@@ -53,7 +54,7 @@ const services = [
         icon: web,
     },
     {
-        title: "THREE.JS Developer",
+        title: "Three.JS Developer",
         icon: mobile,
     },
     {
@@ -237,7 +238,7 @@ const projects = [
                 color: "pink-text-gradient",
             },
         ],
-        image: carrent,
+        image: ali,
         source_code_link: "https://github.com/",
     },
     {

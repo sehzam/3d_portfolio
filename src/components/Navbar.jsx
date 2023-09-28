@@ -20,9 +20,8 @@ const Navbar = () => {
             setActive("")
             window.scrollTo(0, 0)
           }}>
-          <img src={logo} alt="logo" className="w-9 h-9 object-contain" />
+          <img src={logo} alt="logo" className=" h-12 object-contain" />
           <p className="text-white text-[22px] font-bold cursor-pointer flex">
-            sehzam &nbsp;
             <span className="md:block hidden"> · Portfolio ·</span></p>
         </Link>
         <ul className="list-none hidden lg:flex flex-row gap-10">

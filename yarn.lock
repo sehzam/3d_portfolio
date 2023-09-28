@@ -431,7 +431,7 @@
     utility-types "^3.10.0"
     zustand "^3.5.13"
 
-"@react-three/fiber@^8.14.2", "@react-three/fiber@>=6.0", "@react-three/fiber@>=8.0":
+"@react-three/fiber@^8.14.2", "@react-three/fiber@>=6.0", "@react-three/fiber@>=8.0", "@react-three/fiber@latest":
   version "8.14.2"
   resolved "https://registry.npmjs.org/@react-three/fiber/-/fiber-8.14.2.tgz"
   integrity sha512-mD+1Vwl6AwLKmVsXXJNOzGnDOoghIusRXGFBIX6qK9mIAYOO58WAmqSodayYQ1vkp8wnzM9AfrBZZH8Y01BfqA==
@@ -880,6 +880,11 @@ csstype@^3.0.2:
   version "3.1.2"
   resolved "https://registry.npmjs.org/csstype/-/csstype-3.1.2.tgz"
   integrity sha512-I7K1Uu0MBPzaFKg4nI5Q7Vs2t+3gWWW648spaF+Rg7pI9ds18Ugn+lvg4SHczUdKlHI5LWBXyqfS8+DufyBsgQ==
+
+dat.gui@^0.7.9:
+  version "0.7.9"
+  resolved "https://registry.npmjs.org/dat.gui/-/dat.gui-0.7.9.tgz"
+  integrity sha512-sCNc1OHobc+Erc1HqiswYgHdVNpSJUlk/Hz8vzOCsER7rl+oF/4+v8GXFUyCgtXpoCX6+bnmg07DedLvBLwYKQ==
 
 debounce@^1.2.1:
   version "1.2.1"
@@ -2181,7 +2186,7 @@ react-composer@^5.0.3:
   dependencies:
     prop-types "^15.6.0"
 
-react-dom@^18.0.0, react-dom@^18.2.0, react-dom@>=16.13, react-dom@>=16.8, react-dom@>=18.0:
+react-dom@^18.0.0, react-dom@^18.2.0, react-dom@>=16.13, react-dom@>=16.8, react-dom@>=17.0, react-dom@>=18.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react-dom/-/react-dom-18.2.0.tgz"
   integrity sha512-6IMTriUmvsjHUjNtEDudZfuDQUoWXVxKHhlEGSk81n4YFS+r/Kl99wXiwlVXtPBtJenozv2P+hxDsw9eA7Xo6g==
@@ -2257,6 +2262,13 @@ react-router@6.16.0:
   integrity sha512-VT4Mmc4jj5YyjpOi5jOf0I+TYzGpvzERy4ckNSvSh2RArv8LLoCxlsZ2D+tc7zgjxcY34oTz2hZaeX5RVprKqA==
   dependencies:
     "@remix-run/router" "1.9.0"
+
+react-three-fiber@^6.0.13:
+  version "6.0.13"
+  resolved "https://registry.npmjs.org/react-three-fiber/-/react-three-fiber-6.0.13.tgz"
+  integrity sha512-uShQnkMVLvnzwf3YzY9mnzCnpmLpvTQkc0ycrtwk8fyjXmZt2695tLn3tufPF6uxq06UKJRKJcjCVCMXyUcEPQ==
+  dependencies:
+    "@react-three/fiber" latest
 
 react-tilt@^1.0.2:
   version "1.0.2"

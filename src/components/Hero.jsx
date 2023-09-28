@@ -2,6 +2,8 @@ import { SectionWrapper } from '../hoc'
 import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { ComputersCanvas } from './canvas'
+import { PortalCanvas } from './canvas'
+import { CubeCanvas } from './canvas'
 
 const Hero = () => {
   return (
@@ -12,14 +14,14 @@ const Hero = () => {
           <div className="w-1 sm:h-80 h-40 violet-gradient" />
         </div>
         <div>
-          <h1 className={`${styles.heroHeadText} ml-10 text-white`}>Hi, I'm <span className="text-[#915eff]">Kadir</span></h1>
+          <h1 className={`${styles.heroHeadText} ml-10 text-white`}>Greet U, I'm <span className="text-[#435355]">Kadir</span></h1>
           <p className={`${styles.heroSubText} ml-10  mt-2 text-white-100`}>
-            I develop and manage 3D Visuals, <br className="md:block hidden" />
+            I develop and manage 3D Visuals, <br />
             Web & Mobile applications.
           </p>
         </div>
       </div>
-      <ComputersCanvas />
+      <PortalCanvas />
 
       <div className="absolute xs-bottom-10 bottom-32 w-full flex justify-center items-center">
         <a href="#about">
