@@ -71,7 +71,9 @@ const Contact = () => {
             {loading ? 'Sending...' : 'Send'}
           </button>
         </form>
-        <motion.div>
+        <motion.div
+          variants={slideIn('right', 'tween', 0.2, 1)}
+        >
 
         </motion.div>
       </motion.div>
