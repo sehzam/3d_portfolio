@@ -1,47 +1,53 @@
-import { useState, useRef, Suspense } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
-import { Points, PointMaterial, Preload } from '@react-three/drei'
-import * as random from 'maath/random/dist/maath-random.esm'
+import { useState, useRef, Suspense } from "react"
+import { Canvas, useFrame } from "@react-three/fiber"
+import { Points, PointMaterial, Preload } from "@react-three/drei"
+import { inSphere } from "maath/random"
+import * as THREE from "three"
 
-const Stars = (props) => {
+const Stars = () => {
   const ref = useRef()
-
-  const sphere = random.inSphere(new Float32Array(5000), { radius: 1.2 })
+  const [sphere] = useState(
+    () => inSphere(new Float32Array(250), { radius: 1.2 })
+  )
 
   useFrame((state, delta) => {
     ref.current.rotation.x -= delta / 10
     ref.current.rotation.y -= delta / 15
   })
 
+  const randomRGBColor = () => {
+    const r = Math.floor(Math.random() * 256) // Zufälliger Wert zwischen 0 und 255
+    const g = Math.floor(Math.random() * 256)
+    const b = Math.floor(Math.random() * 256)
+    return `rgb(${r}, ${g}, ${b})` // Generiere den RGB-String
+  }
+
+  const randomColor = new THREE.Color(randomRGBColor()) // Konvertiere den RGB-String in ein THREE.Color-Objekt
+
   return (
     <group rotation={[0, 0, Math.PI / 4]}>
-      <Points
-        ref={ref}
-        positions={sphere}
-        stride={7}
-        frustumCulled
-        {...props}
-      >
+      <Points ref={ref} positions={sphere} stride={3} frustumCulled>
         <PointMaterial
           transparent
-          color='#f2272c6'
-          size={0.01}
+          color={randomColor} // Verwende das THREE.Color-Objekt als Farbe
+          size={0.0075}
           sizeAttenuation={true}
           depthWrite={false}
         />
       </Points>
-
     </group>
   )
 }
 
 const StarsCanvas = () => {
   return (
-    <div className="w-full h-full absolute inset-0 z-[-1]">
+    <div className="w-full h-auto absolute inset-0 z-[-1]">
       <Canvas camera={{ position: [0, 0, 1] }}>
         <Suspense fallback={null}>
           <Stars />
         </Suspense>
+
+        <Preload all />
       </Canvas>
     </div>
   )

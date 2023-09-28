@@ -107,6 +107,27 @@
   -webkit-text-fill-color: transparent;
 }
 
+/* CSS-Übergangseffekte für das Menü und die Nachbarn */
+.menu-transition {
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.menu-transition.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CSS-Übergangseffekte für das Menu-Icon */
+.menu-icon-transition {
+  transition: transform 0.3s ease;
+}
+
+.menu-icon-transition.active {
+  transform: rotate(180deg);
+}
+
 /* canvas- styles */
 .canvas-loader {
   font-size: 10px;

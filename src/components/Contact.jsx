@@ -24,16 +24,16 @@ const Contact = () => {
     setLoading(true)
 
     emailjs.send(
-      'service_rlipyi2',
-      'template_3vv3tii',
+      'service_musoivo',
+      'template_7drsa9g',
       {
-        form_name: form.name,
+        from_name: form.name,
         to_name: "Kadir",
-        form_email: form.email,
+        from_email: form.email,
         to_email: "sehzam@gmail.com",
         message: form.message,
       },
-      "T8RdD8YGaIzxnWaKXHDGJ"
+      'K0Rthvp5MCNmbaHIL'
     ).then(() => {
       setLoading(false)
       alert('Thank you. I will get back to you as soon as possible.')
@@ -56,7 +56,7 @@ const Contact = () => {
         className="flex-[0.75] bg-black-100 p-8 rounded-2xl"
       >
         <p className={styles.sectionSubText}>Get in touch</p>
-        <h3 className={styles.sectionHeadText}>Contact.</h3>
+        <h3 className={styles.sectionHeadText}>· Contact ·</h3>
 
         <form
           ref={formRef}

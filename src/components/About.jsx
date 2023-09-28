@@ -35,7 +35,7 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>· Overview ·</h2>
       </motion.div>
 
       <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-white">
@@ -46,6 +46,7 @@ const About = () => {
         I'm a quick learner and collaborate closely with clients
         that solve real-world problems.
         <br />
+        Also am i continuously studying data science to be the Allrounder for my customers.
         Let's work together to bring your ideas to life!
       </motion.p>
 
