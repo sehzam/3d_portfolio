@@ -7,12 +7,10 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="relative z-0">
-        <div className="vg-no-repeat bg-center">
+        <div className="bg-hero-pattern bg-cover vg-no-repeat bg-center">
           <Navbar />
-          <div className="relative z-0">
-            <StarsCanvas />
-            <Hero />
-          </div>
+          <Hero />
+          <StarsCanvas />
         </div>
         <About />
         <Experience />

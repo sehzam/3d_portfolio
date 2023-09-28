@@ -22,6 +22,32 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault()
     setLoading(true)
+
+    emailjs.send(
+      'service_rlipyi2',
+      'template_3vv3tii',
+      {
+        form_name: form.name,
+        to_name: "Kadir",
+        form_email: form.email,
+        to_email: "sehzam@gmail.com",
+        message: form.message,
+      },
+      "T8RdD8YGaIzxnWaKXHDGJ"
+    ).then(() => {
+      setLoading(false)
+      alert('Thank you. I will get back to you as soon as possible.')
+
+      setForm({
+        name: "",
+        email: "",
+        message: "",
+      }, (error) => {
+        setLoading(false)
+        console.log(errror)
+        alert("Something went wrong.")
+      })
+    })
   }
   return (
     <div className="xl:mt-12 xl:flex-row flex-col-reverse flex gap-10 overflow-hidden">
