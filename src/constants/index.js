@@ -176,27 +176,6 @@ const experiences = [
 
 const testimonials = [
     {
-        testimonial: "Kadir's expertise in web development is unmatched. His contributions significantly enhanced our digital presence and user experience.",
-        name: "Isabella White",
-        designation: "UX/UI Designer",
-        company: "WhiteDesigns",
-        image: "https://randomuser.me/api/portraits/women/37.jpg",
-    },
-    {
-        testimonial: "We can't thank Kadir enough for his exceptional work. His website optimization efforts have opened up new horizons for our business.",
-        name: "David Turner",
-        designation: "COO",
-        company: "TechHorizon Solutions",
-        image: "https://randomuser.me/api/portraits/men/44.jpg",
-    },
-    {
-        testimonial: "Kadir's attention to detail and commitment to excellence shine through in his work. He transformed our website into a top-notch platform.",
-        name: "Sophia Walker",
-        designation: "Marketing Manager",
-        company: "Walker Marketing",
-        image: "https://randomuser.me/api/portraits/women/53.jpg",
-    },
-    {
         testimonial: "We owe our web success to Kadir's skills. His optimizations have catapulted our site's performance and user engagement.",
         name: "Ava Nelson",
         designation: "Lead Developer",

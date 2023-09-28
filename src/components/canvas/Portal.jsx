@@ -1,16 +1,16 @@
-import React, { Suspense, useEffect, useState } from 'react'
-import { Canvas, useFrame } from '@react-three/fiber'
+import React, { Suspense, useEffect, useState, useMemo } from 'react'
+import { useFrame } from '@react-three/fiber'
 import { OrbitControls, Preload, useGLTF } from '@react-three/drei'
 import * as dat from 'dat.gui' // Importieren Sie dat.GUI
 import CanvasLoader from '../Loader'
 
-
 const Portal = ({ isMobile }) => {
-    const portal = useGLTF('/portal/portal.gltf')
+    const portal = useGLTF('/swirl/scene.gltf')
+
 
 
     const [portalProps, setPortalProps] = useState({
-        scale: 0.40,
+        scale: 0.15,
         position: [4, -2.3, 0.2],
         rotation: [-0.01, 1.63, 0.11],
     })
