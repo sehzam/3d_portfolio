@@ -187,7 +187,7 @@ const testimonials = [
         name: "Alex Schenk",
         designation: "Data Engineer",
         company: "Schenk GmbH",
-        image: "https://randomuser.me/api/portraits/men/76.jpg",
+        image: "https://randomuser.me/api/portraits/men/52.jpg",
     },
     {
         testimonial: "Working with Kadir was a game-changer. He optimized our website's performance, resulting in a noticeable boost in user engagement.",
