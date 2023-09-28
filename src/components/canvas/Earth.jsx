@@ -10,4 +10,12 @@ const Earth = () => {
   )
 }
 
-export default Earth
+const EarthCanvas = () => {
+  <Canvas
+    shadows
+  >
+
+  </Canvas>
+}
+
+export default EarthCanvas
