@@ -18,7 +18,9 @@ const EarthCanvas = () => {
     camera={{}}
   >
     <Suspense fallback={<CanvasLoader />}>
-
+      <OrbitControls
+        autoRotate
+      />
     </Suspense>
   </Canvas>
 }
