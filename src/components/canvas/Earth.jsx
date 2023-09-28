@@ -9,9 +9,11 @@ const Earth = () => {
   return (
     <primitive
       object={earth.scene}
-      scale={2}
-      position-y={0}
-      rotation-y={0}
+      scale={1.25}
+      position-y={-1}
+      position-x={-1}
+      rotation-y={-1}
+      rotation-x={0}
     />
   )
 }
