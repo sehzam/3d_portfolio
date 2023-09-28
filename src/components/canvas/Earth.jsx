@@ -20,6 +20,7 @@ const EarthCanvas = () => {
     <Suspense fallback={<CanvasLoader />}>
       <OrbitControls
         autoRotate
+        enableZoom={false}
       />
     </Suspense>
   </Canvas>
