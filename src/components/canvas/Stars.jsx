@@ -7,7 +7,7 @@ import * as THREE from "three"
 const Stars = () => {
   const ref = useRef()
   const [sphere] = useState(
-    () => inSphere(new Float32Array(250), { radius: 1.2 })
+    () => inSphere(new Float32Array(500), { radius: 1 })
   )
 
   useFrame((state, delta) => {
@@ -30,7 +30,7 @@ const Stars = () => {
         <PointMaterial
           transparent
           color={randomColor} // Verwende das THREE.Color-Objekt als Farbe
-          size={0.0075}
+          size={0.003}
           sizeAttenuation={true}
           depthWrite={false}
         />

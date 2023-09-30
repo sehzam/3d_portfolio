@@ -13,6 +13,7 @@
   color-scheme: dark;
 }
 
+
 .hash-span {
   margin-top: -100px;
   padding-bottom: 100px;
@@ -32,12 +33,18 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-.violet-gradient {
+.red-gradient {
   background: #6366f1;
   background: linear-gradient(-90deg, #804dee 0%, rgba(60, 51, 80, 0) 100%);
   background: -webkit-linear-gradient(-90deg,
-      #6366f1 0%,
+      red 0%,
       rgba(60, 51, 80, 0) 100%);
+}
+
+.blue-red-gradient {
+  background: #005a60;
+  background: linear-gradient(90.13deg, blue 1.9%, red 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, blue 1.9%, red 97.5%);
 }
 
 .green-pink-gradient {
@@ -105,6 +112,13 @@
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@font-face {
+  font-family: 'Pixelify';
+  src: url('fonts/Pixelify/PixelifySans.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
 }
 
 /* CSS-Übergangseffekte für das Menü und die Nachbarn */

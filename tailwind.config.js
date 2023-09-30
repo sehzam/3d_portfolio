@@ -4,14 +4,18 @@ export default {
   mode: "jit",
   theme: {
     extend: {
+      transitionDuration: {
+        '1000': '1000ms',
+        '2000': '2000ms',
+      },
       colors: {
-        primary: "#0f0f0f",
-        secondary: "#768077",
-        third: "#262225",
-        tertiary: "#0a071a",
-        "black-100": "#100d25",
-        "black-200": "#090325",
-        "white-100": "#f3f3f3"
+        primary: "black",
+        secondary: "orange",
+        third: "cyan",
+        tertiary: "#141414",
+        "black-100": "#080808",
+        "black-200": "#2a2c33",
+        "white-100": "#d9e6f2"
       },
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",

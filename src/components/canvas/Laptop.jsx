@@ -5,11 +5,11 @@ import { Canvas } from "react-three-fiber"
 import CanvasLoader from '../Loader'
 
 const Laptop = () => {
-    const laptop = useGLTF('/laptop/asus.gltf')
+    const laptop = useGLTF('/desktop_pc/scene.gltf')
     return (
         <primitive
             object={laptop.scene}
-            scale={1}
+            scale={0.4}
             position-y={-1}
             position-x={0}
             rotation-y={0}
@@ -39,7 +39,7 @@ const LaptopCanvas = () => {
                     maxPolarAngle={Math.PI / 2}
                     minPolarAngle={Math.PI / 2}
                 />
-                <ambientLight intensity={3} />
+                <ambientLight intensity={2} />
                 <Laptop />
             </Suspense>
         </Canvas>
