@@ -3,8 +3,11 @@ import { motion } from 'framer-motion'
 import { styles } from '../styles'
 import { ComputersCanvas, EarthCanvas } from './canvas'
 import CanvasLoader from './Loader'
+import { useIsMobile } from '../MobileContext'
 
 const Hero = () => {
+  const isMobile = useIsMobile()
+
   return (
     <section className="relative w-full h-screen mx-auto">
       <div className={`${styles.paddingX} justify-between flex flex-row-reverse absolute inset-0 top-[100px] max-w-7xl mx-auto flex flex-row items-start gap-5`}>
@@ -25,10 +28,10 @@ const Hero = () => {
       <Suspense fallback={<CanvasLoader />}>
         {/* <CubeCanvas /> */}
         {/* <ComputersCanvas /> */}
-        <EarthCanvas />
+        <EarthCanvas isMobile={isMobile} />
       </Suspense>
 
-      <div className="absolute xs-bottom-10 bottom-32 w-full flex justify-center items-center">
+      <div className={`absolute xs-bottom-10 bottom-32 w-full flex justify-center items-center ${isMobile ? '' : 'hidden'}`}>
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-indigo-500 flex justify-center items-start p-2">
             <motion.div

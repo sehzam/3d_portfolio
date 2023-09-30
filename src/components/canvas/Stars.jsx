@@ -7,7 +7,7 @@ import * as THREE from "three"
 const Stars = () => {
   const ref = useRef()
   const [sphere] = useState(
-    () => inSphere(new Float32Array(500), { radius: 1 })
+    () => inSphere(new Float32Array(1000), { radius: 1.3 })
   )
 
   useFrame((state, delta) => {

@@ -1,24 +1,26 @@
-import { OrbitControls, Preload, SpotLight, useGLTF } from "@react-three/drei"
+import { OrbitControls, Preload, useGLTF } from "@react-three/drei"
 import { Suspense } from "react"
 import { Canvas } from "react-three-fiber"
 
 import CanvasLoader from '../Loader'
+import { useIsMobile } from '../../MobileContext'
 
 const Laptop = () => {
-    const laptop = useGLTF('/desktop_pc/scene.gltf')
+    const isMobile = useIsMobile()
+
+    const laptop = useGLTF('/laptop/asus.gltf')
     return (
         <primitive
             object={laptop.scene}
-            scale={0.4}
-            position-y={-1}
-            position-x={0}
-            rotation-y={0}
-            rotation-x={0}
+            scale={isMobile ? 1.8 : 1.3}
+            position={isMobile ? [0, 0, 0] : [0, -1, 0]}
+            rotation={isMobile ? [0, 1, 0] : [0, 0, 0]}
         />
     )
 }
 
 const LaptopCanvas = () => {
+
     return (
 
         <Canvas
@@ -33,15 +35,17 @@ const LaptopCanvas = () => {
             }}
         >
             <Suspense fallback={<CanvasLoader />}>
+                <ambientLight intensity={3} />
                 <OrbitControls
                     autoRotate
                     enableZoom={false}
                     maxPolarAngle={Math.PI / 2}
                     minPolarAngle={Math.PI / 2}
                 />
-                <ambientLight intensity={2} />
                 <Laptop />
             </Suspense>
+            <Preload all />
+
         </Canvas>
     )
 }

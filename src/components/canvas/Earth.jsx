@@ -4,21 +4,20 @@ import { Canvas } from "react-three-fiber"
 
 import CanvasLoader from '../Loader'
 
-const Earth = () => {
+const Earth = ({ isMobile }) => {
   const earth = useGLTF('/planet/scene.gltf')
+  // alert(isMobile)
   return (
     <primitive
       object={earth.scene}
-      scale={1.25}
-      position-y={-1}
-      position-x={-1}
-      rotation-y={-1}
-      rotation-x={0}
+      scale={isMobile ? 1.5 : 1.8}
+      position={isMobile ? [0, -1, 0] : [0, -0.5, 2.5]}
+      rotation={isMobile ? [0, 0, 0] : [0, 0, 0]}
     />
   )
 }
 
-const EarthCanvas = () => {
+const EarthCanvas = ({ isMobile }) => {
   return (
 
     <Canvas
@@ -39,8 +38,10 @@ const EarthCanvas = () => {
           maxPolarAngle={Math.PI / 2}
           minPolarAngle={Math.PI / 2}
         />
-        <Earth />
+        <Earth isMobile={isMobile} />
       </Suspense>
+      <Preload all />
+
     </Canvas>
   )
 }

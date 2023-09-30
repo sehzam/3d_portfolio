@@ -42,11 +42,15 @@ const About = () => {
         I'm a skilled software developer with experience in TypeScript and JavaScript,
         and expertise in frameworks like React, Node.JS, and Three.js.
         <br />
-        to create efficient, scalable, and user-friendly solutions
-        I'm a quick learner and collaborate closely with clients
+        to create efficient, scalable, and <br />
+        user-friendly solutions
+        <br />
+        I'm a quick learner and collaborate closely
+        <br />
+        with clients
         that solve real-world problems.
         <br />
-        Also am i continuously studying data science to be the Allrounder for my customers.
+        Also am i continuously studying data science to be the Allrounder for my customers.<br />
         Let's work together to bring your ideas to life!
       </motion.p>
 

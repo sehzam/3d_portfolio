@@ -5,8 +5,11 @@ import { styles } from '../styles'
 import { LaptopCanvas, SwirlCanvas } from './canvas'
 import { SectionWrapper } from '../hoc'
 import { slideIn } from '../utils/motion'
+import { useIsMobile } from '../MobileContext'
 
 const Contact = () => {
+  const isMobile = useIsMobile()
+
   const formRef = useRef()
   const [form, setForm] = useState({
     name: '',
@@ -109,7 +112,7 @@ const Contact = () => {
         variants={slideIn('right', 'tween', 0.2, 1)}
         className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
       >
-        {/* <LaptopCanvas /> */}
+        <LaptopCanvas isMobile={isMobile} />
       </motion.div>
     </div>
   )
