@@ -20,7 +20,10 @@ const App = () => {
           </div>
           <Works />
           <Feedbacks />
-          <Contact />
+          <div className="relative z-0">
+            <StarsCanvas />
+            <Contact />
+          </div>
         </div>
       </MobileProvider>
     </BrowserRouter>

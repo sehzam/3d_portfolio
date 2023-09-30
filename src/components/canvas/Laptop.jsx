@@ -12,9 +12,9 @@ const Laptop = () => {
     return (
         <primitive
             object={laptop.scene}
-            scale={isMobile ? 1.8 : 1.3}
-            position={isMobile ? [0, 0, 0] : [0, -1, 0]}
-            rotation={isMobile ? [0, 1, 0] : [0, 0, 0]}
+            scale={isMobile ? 1.55 : 1}
+            position={isMobile ? [0, -1.6, 0] : [0, -1, -0.3]}
+            rotation={isMobile ? [-1, 2, 1] : [-1, 2, 1]}
         />
     )
 }
@@ -38,6 +38,7 @@ const LaptopCanvas = () => {
                 <ambientLight intensity={3} />
                 <OrbitControls
                     autoRotate
+                    enablePan={false}
                     enableZoom={false}
                     maxPolarAngle={Math.PI / 2}
                     minPolarAngle={Math.PI / 2}

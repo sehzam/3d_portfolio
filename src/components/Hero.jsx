@@ -4,6 +4,7 @@ import { styles } from '../styles'
 import { ComputersCanvas, EarthCanvas } from './canvas'
 import CanvasLoader from './Loader'
 import { useIsMobile } from '../MobileContext'
+import { SectionWrapper } from '../hoc'
 
 const Hero = () => {
   const isMobile = useIsMobile()
@@ -52,4 +53,4 @@ const Hero = () => {
   )
 }
 
-export default Hero
+export default SectionWrapper(Hero, "hero")
