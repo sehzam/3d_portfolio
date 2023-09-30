@@ -54,7 +54,7 @@ const Navbar = () => {
                               py-2 px-4 rounded inline-flex items-center 
                               transition-transform duration-2000 delay-500
                         ${scrolling ? 'transform' : ''}`}>
-            Resume CV
+            CV
             <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
               <path fillRule="evenodd" d="M3 2a1 1 0 011 1v13a1 1 0 11-2 0V3a1 1 0 011-1zm15 0a2 2 0 012 2v13a2 2 0 01-2 2H3a2 2 0 01-2-2V4a2 2 0 012-2h7a1 1 0 110 2H5a1 1 0 00-1 1v11a1 1 0 001 1h12a1 1 0 001-1V4a1 1 0 00-1-1h-2a1 1 0 110-2h2z" clipRule="evenodd" />
             </svg>
