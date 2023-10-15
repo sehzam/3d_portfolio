@@ -1,33 +1,48 @@
 import { BrowserRouter } from 'react-router-dom'
-import { MobileProvider } from './MobileContext'
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from './components'
+import { MobileProvider } from './context/MobileContext'
+import { ContactModalProvider } from './context/ContactModalContext'
+import { CvModalProvider } from './context/CvModalContext'
+import { Navbar, Hero, About, Contact, Experience, Feedbacks, Technologies, Works, DataScience } from './components'
+import loadFonts, { fontFamilies } from "./loader/FontsLoader"
+import { useEffect } from 'react'
+
 
 const App = () => {
+  useEffect(() => {
+    loadFonts(fontFamilies)
+  }, [])
+  useEffect(() => {
+    const disableRightClick = (e) => {
+      e.preventDefault()
+    }
+
+    // Rechtsklick-Ereignis auf dem gesamten Dokument deaktivieren
+    document.addEventListener('contextmenu', disableRightClick)
+
+    return () => {
+      // Aufräumen, wenn die Komponente unmontiert wird
+      document.removeEventListener('contextmenu', disableRightClick)
+    }
+  }, [])
   return (
     <BrowserRouter>
       <MobileProvider>
-        <div className="relative z-0 bg-primary">
-          <Navbar />
-          <div className="relative z-0">
-            <StarsCanvas />
-            <Hero />
-          </div>
-          <About />
-          <Experience />
-          <div className="relative z-0">
-            <StarsCanvas />
-            <Tech />
-          </div>
-          <Works />
-          <Feedbacks />
-          <div className="relative z-0">
-            <StarsCanvas />
-            <Contact />
-          </div>
-        </div>
+        <ContactModalProvider>
+          <CvModalProvider>
+            <div className="relative w-screen bg-black ">
+              <Navbar />
+              <Hero />
+              <About />
+              <Experience />
+              <Technologies />
+              <Works />
+              <Feedbacks />
+              <Contact />
+            </div>
+          </CvModalProvider>
+        </ContactModalProvider>
       </MobileProvider>
     </BrowserRouter>
   )
 }
-
 export default App
