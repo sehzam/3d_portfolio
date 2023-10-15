@@ -905,7 +905,7 @@ export { companies, languages, technologies, education, statements, experiences,
     )
 
     return (
-        <div className="rounded-xl bg-indigo-900/10  items-center grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
+        <div className="rounded-xl bg-indigo-900/10  items-start grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
             <div className="skyBorder rounded-xl m-1">
                 <CodeEditor
                     value={codeHTML}
