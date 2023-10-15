@@ -1,0 +1,699 @@
+/* Textgradient 1 */
+.t1 {
+    background: linear-gradient(to top, #ce14e8, #dcf46f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 2 */
+.t2 {
+    background: linear-gradient(to top, #78fa42, #df0124);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 3 */
+.t3 {
+    background: linear-gradient(to top, #a9e4bb, #ee41d4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 4 */
+.t4 {
+    background: linear-gradient(to top, #450a3d, #3b4c1a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 5 */
+.t5 {
+    background: linear-gradient(to top, #693949, #e4946e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 6 */
+.t6 {
+    background: linear-gradient(to top, #8af541, #2e8758);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 7 */
+.t7 {
+    background: linear-gradient(to top, #64f0af, #819cc7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 8 */
+.t8 {
+    background: linear-gradient(to top, #d04d3c, #a767ca);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 9 */
+.t9 {
+    background: linear-gradient(to top, #323804, #819cc7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 10 */
+.t10 {
+    background: linear-gradient(to top, #81705b, #67189c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 11 */
+.t11 {
+    background: linear-gradient(to top, #e24ebf, #85e2a7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 12 */
+.t12 {
+    background: linear-gradient(to top, #3bf8b4, #e2b321);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 13 */
+.t13 {
+    background: linear-gradient(to top, #144c70, #932868);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 14 */
+.t14 {
+    background: linear-gradient(to top, #a651bf, #baf016);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 15 */
+.t15 {
+    background: linear-gradient(to top, #5a812a, #75bfd0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 16 */
+.t16 {
+    background: linear-gradient(to top, #144c70, #e0c136);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 17 */
+.t17 {
+    background: linear-gradient(to top, #3c18e3, #935622);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 18 */
+.t18 {
+    background: linear-gradient(to top, #f7f2f8, #700eed);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 19 */
+.t19 {
+    background: linear-gradient(to top, #e5fe22, #31e33b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 20 */
+.t20 {
+    background: linear-gradient(to top, #1687b3, #b2c48c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 21 */
+.t21 {
+    background: linear-gradient(to top, #9cb641, #f7f2f8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 22 */
+.t22 {
+    background: linear-gradient(to top, #e65408, #80a08e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 23 */
+.t23 {
+    background: linear-gradient(to top, #7d4f8b, #68d53c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 24 */
+.t24 {
+    background: linear-gradient(to top, #ae26d6, #eb713b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 25 */
+.t25 {
+    background: linear-gradient(to top, #5ab936, #76cae4);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 26 */
+.t26 {
+    background: linear-gradient(to top, #720603, #a8bbc6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 27 */
+.t27 {
+    background: linear-gradient(to top, #6401f9, #faac8b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 28 */
+.t28 {
+    background: linear-gradient(to top, #e047b6, #51c9ee);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 29 */
+.t29 {
+    background: linear-gradient(to top, #ff8a05, #74c325);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 30 */
+.t30 {
+    background: linear-gradient(to top, #cbc6b9, #8c8def);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 31 */
+.t31 {
+    background: linear-gradient(to top, #9b31e3, #c6bb16);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 32 */
+.t32 {
+    background: linear-gradient(to top, #390246, #27d05b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 33 */
+.t33 {
+    background: linear-gradient(to top, #53b28f, #bdbb03);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 34 */
+.t34 {
+    background: linear-gradient(to top, #6e92a2, #5c03b2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 35 */
+.t35 {
+    background: linear-gradient(to top, #a22a4c, #32a971);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 36 */
+.t36 {
+    background: linear-gradient(to top, #22b593, #a8b770);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 37 */
+.t37 {
+    background: linear-gradient(to top, #c75639, #96b4b7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 38 */
+.t38 {
+    background: linear-gradient(to top, #517489, #a862ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 39 */
+.t39 {
+    background: linear-gradient(to top, #361b05, #624231);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 40 */
+.t40 {
+    background: linear-gradient(to top, #183c04, #888dd5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 41 */
+.t41 {
+    background: linear-gradient(to top, #2d3626, #36f31f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 42 */
+.t42 {
+    background: linear-gradient(to top, #dbdb58, #725708);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 43 */
+.t43 {
+    background: linear-gradient(to top, #2d3626, #15c1d6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 44 */
+.t44 {
+    background: linear-gradient(to top, #dddce5, #c73f2b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 45 */
+.t45 {
+    background: linear-gradient(to top, #d1c5c7, #23d496);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 46 */
+.t46 {
+    background: linear-gradient(to top, #9b1ab4, #5ab936);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 47 */
+.t47 {
+    background: linear-gradient(to top, #2d3626, #e834b8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 48 */
+.t48 {
+    background: linear-gradient(to top, #c3b3b1, #36a788);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 49 */
+.t49 {
+    background: linear-gradient(to top, #328a0f, #5ab936);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 50 */
+.t50 {
+    background: linear-gradient(to top, #9858, #896b31);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 51 */
+.t51 {
+    background: linear-gradient(to top, #5f5447, #30890d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 52 */
+.t52 {
+    background: linear-gradient(to top, #424cc6, #6a7fb7);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 53 */
+.t53 {
+    background: linear-gradient(to top, #365bf6, #36fd0c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 54 */
+.t54 {
+    background: linear-gradient(to top, #2b1cc6, #4b20d2);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 55 */
+.t55 {
+    background: linear-gradient(to top, #eeab68, #d2488c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 56 */
+.t56 {
+    background: linear-gradient(to top, #f4362e, #adce9a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 57 */
+.t57 {
+    background: linear-gradient(to top, #5840df, #2bf8bf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 58 */
+.t58 {
+    background: linear-gradient(to top, #8378ed, #26f720);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 59 */
+.t59 {
+    background: linear-gradient(to top, #9ab9d9, #73c065);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 60 */
+.t60 {
+    background: linear-gradient(to top, #642512, #e01c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 61 */
+.t61 {
+    background: linear-gradient(to top, #427692, #c3527c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 62 */
+.t62 {
+    background: linear-gradient(to top, #bab6e5, #10e78a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 63 */
+.t63 {
+    background: linear-gradient(to top, #83c14d, #ed2a72);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 64 */
+.t64 {
+    background: linear-gradient(to top, #850975, #245bda);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 65 */
+.t65 {
+    background: linear-gradient(to top, #973803, #3e8df5);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 66 */
+.t66 {
+    background: linear-gradient(to top, #b66267, #5f8f69);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 67 */
+.t67 {
+    background: linear-gradient(to top, #a4c0fd, #d1dd9f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 68 */
+.t68 {
+    background: linear-gradient(to top, #7f43cb, #8ad663);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 69 */
+.t69 {
+    background: linear-gradient(to top, #f96003, #93f97d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 70 */
+.t70 {
+    background: linear-gradient(to top, #a73fbc, #649bfc);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 71 */
+.t71 {
+    background: linear-gradient(to top, #a43fb4, #53d2e8);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 72 */
+.t72 {
+    background: linear-gradient(to top, #91396c, #f658ab);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 73 */
+.t73 {
+    background: linear-gradient(to top, #2d3626, #3b39d1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 74 */
+.t74 {
+    background: linear-gradient(to top, #2d3626, #1270f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 75 */
+.t75 {
+    background: linear-gradient(to top, #1191be, #b9fde0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 76 */
+.t76 {
+    background: linear-gradient(to top, #9428a1, #47aa7c);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 77 */
+.t77 {
+    background: linear-gradient(to top, #172f27, #77e3c6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 78 */
+.t78 {
+    background: linear-gradient(to top, #a07d38, #8913a1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 79 */
+.t79 {
+    background: linear-gradient(to top, #d457cf, #222816);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 80 */
+.t80 {
+    background: linear-gradient(to top, #39cdf9, #530674);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 81 */
+.t81 {
+    background: linear-gradient(to top, #3bf9a4, #3ef40a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 82 */
+.t82 {
+    background: linear-gradient(to top, #16e57e, #77df92);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 83 */
+.t83 {
+    background: linear-gradient(to top, #10d108, #82d2d9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 84 */
+.t84 {
+    background: linear-gradient(to top, #5f04a5, #bed0e0);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 85 */
+.t85 {
+    background: linear-gradient(to top, #e8fa3f, #3f977a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 86 */
+.t86 {
+    background: linear-gradient(to top, #9af2a4, #6092eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 87 */
+.t87 {
+    background: linear-gradient(to top, #197a33, #b0372a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 88 */
+.t88 {
+    background: linear-gradient(to top, #f2a90f, #3a533e);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 89 */
+.t89 {
+    background: linear-gradient(to top, #e62797, #90cba6);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 90 */
+.t90 {
+    background: linear-gradient(to top, #25df28, #62c29d);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 91 */
+.t91 {
+    background: linear-gradient(to top, #358686, #431d7f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 92 */
+.t92 {
+    background: linear-gradient(to top, #fc08c8, #4da3e9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 93 */
+.t93 {
+    background: linear-gradient(to top, #132983, #a57cc9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 94 */
+.t94 {
+    background: linear-gradient(to top, #64af93, #fe5ded);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 95 */
+.t95 {
+    background: linear-gradient(to top, #db7fbb, #dea6f9);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 96 */
+.t96 {
+    background: linear-gradient(to top, #77e3c6, #e4febf);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 97 */
+.t97 {
+    background: linear-gradient(to top, #f1329f, #9bd49f);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 98 */
+.t98 {
+    background: linear-gradient(to top, #cde84a, #783881);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 99 */
+.t99 {
+    background: linear-gradient(to top, #e00e85, #bd0a39);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Textgradient 100 */
+.t100 {
+    background: linear-gradient(to top, #aeaa61, #68ec4a);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
