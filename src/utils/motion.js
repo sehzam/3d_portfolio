@@ -86,3 +86,21 @@ export const staggerContainer = (staggerChildren, delayChildren) => {
         },
     }
 }
+
+export const shake = (strength, duration) => {
+    return {
+        hidden: {
+            x: 0,
+            y: 0,
+        },
+        shake: {
+            x: [0, -strength, strength, -strength, strength, 0],
+            y: [0, -strength, strength, -strength, strength, 0],
+            transition: {
+                type: "spring",
+                duration: duration,
+                ease: "easeInOut",
+            },
+        },
+    }
+}
