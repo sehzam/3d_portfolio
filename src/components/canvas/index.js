@@ -1,8 +1,9 @@
-import EarthCanvas from "./Earth"
-import BallCanvas from "./Ball"
-import ComputersCanvas from "./Computers"
-import StarsCanvas from "./Stars"
-import LaptopCanvas from "./Laptop"
-import SwirlCanvas from "./Swirl"
+import EarthCanvas from "./components/Earth"
+import ComputersCanvas from "./components/Computers"
+import StarsCanvas from "./components/Stars"
+import LaptopCanvas from "./components/Laptop"
+import TechCube from "./components/TechCube"
+import TechCard from "./components/TechCard"
+import OrchideeCanvas from "./components/Orchidee"
 
-export { SwirlCanvas, EarthCanvas, BallCanvas, ComputersCanvas, StarsCanvas, LaptopCanvas }
+export { EarthCanvas, ComputersCanvas, StarsCanvas, LaptopCanvas, TechCube, TechCard, OrchideeCanvas }
