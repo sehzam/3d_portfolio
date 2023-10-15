@@ -22,6 +22,8 @@ import {
 import { useState } from 'react'
 
 export const Resume = () => (
+
+
     <PDFViewer className="h-screen w-full">
         <Document >
             <Page size='A4' style={stylesCv.page}>
@@ -119,6 +121,8 @@ export const Resume = () => (
             </Page>
         </Document>
     </PDFViewer>
+
+
 )
 
 export const Code = () => {
