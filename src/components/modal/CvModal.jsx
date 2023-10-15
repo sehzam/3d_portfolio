@@ -68,7 +68,7 @@ const CvModal = () => {
                             <li>
                                 {toggle ? (
                                     <div className="oceanBorder rounded-xl">
-                                        <a href="cv.pdf">
+                                        <a href="cv.pdf" target="_blank">
                                             <button
                                                 className="flex flex-row items-center bg-black m-[0.1px] text-white text-xl p-2 rounded-xl"
                                                 type="button">
@@ -97,8 +97,15 @@ const CvModal = () => {
                     {/* <!--Modal body--> */}
                     <TEModalBody className="bg-black">
                         <div className=" rounded-xl p-[0.2px] skyBorder ">
-                            <div className=" rounded-xl p-[0.2px] bg-black">
-                                {!toggle ? <Code /> : <img src="cv.png" alt="CV" className="rounded-xl md:px-[100px] lg:px-[200px] xl:px-[300px] 2xl:px-[400px] " />}
+                            <div className=" rounded-xl p-[0.2px] bg-black ">
+                                {!toggle ? <Code /> : (
+                                    <div className=" flex flex-row">
+                                        <div className="w-full"></div>
+                                        <img src="cv.png" alt="CV" className="rounded-xl" />
+                                        <div className="w-full"></div>
+                                    </div>
+
+                                )}
                                 {/* <Resume /> */}
                             </div>
                         </div>
