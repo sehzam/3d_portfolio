@@ -2,6 +2,7 @@
 export default {
   content: ["./src/**/*.{js,jsx}"],
   mode: "jit",
+  darkMode: 'class',
   theme: {
     extend: {
       transitionDuration: {
@@ -10,7 +11,7 @@ export default {
       },
       colors: {
         primary: "black",
-        secondary: "orange",
+        secondary: "skyblue",
         third: "cyan",
         tertiary: "#141414",
         "black-100": "#080808",
@@ -20,11 +21,12 @@ export default {
       boxShadow: {
         card: "0px 35px 120px -15px #211e35",
       },
+      fontFamily: {
+        'sans': ['VT323-Regular', 'sans-serif'],
+
+      },
       screens: {
         xs: "450px",
-      },
-      backgroundImage: {
-        "hero-pattern": "url('/src/assets/herobg.png')",
       },
     },
   },
