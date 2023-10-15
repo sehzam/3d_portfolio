@@ -1,0 +1,53 @@
+* {
+    font-family: "TenorSans-Regular", sans-serif;
+}
+
+.hero-title {
+    font-family: "NothingYouCouldDo-Regular", sans-serif;
+    justify-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero-u {
+    font-family: "Codystar-Regular", sans-serif;
+}
+
+.hero-i {
+    font-family: "GermaniaOne-Regular", sans-serif;
+}
+
+.hero-i {
+    font-family: "GermaniaOne-Regular", sans-serif;
+}
+
+.hero-p {
+    font-family: "Silkscreen-Regular", sans-serif;
+}
+
+.hero-d {
+    font-family: "Electrolize-Regular", sans-serif;
+}
+
+.section-p,
+.work-p,
+.exp-p,
+.tech-p,
+.feed-p,
+.contact-p {
+    font-family: "Frijole-Regular", sans-serif;
+}
+
+.section-h2,
+.work-h2,
+.exp-h2,
+.tech-h2,
+.feed-h2,
+.contact-h2 {
+    font-family: "TradeWinds-Regular", sans-serif;
+}
+
+.about-title {
+    font-family: "Orbitron-VariableFont_wght", sans-serif;
+    font-weight: 900;
+}
