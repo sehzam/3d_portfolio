@@ -1,0 +1,207 @@
+.barBottom {
+    margin-bottom: 30px;
+    width: 100%;
+    height: 0.2vh;
+    border-radius: 10px;
+}
+
+.oceanBorder {
+    border: 1px solid transparent;
+    background: linear-gradient(to bottom,
+            #246ef8, #00115783, #246ef8, #00115783, #246ef8, #246ef8, #00115783, #246ef8, #246ef8, #00115783, #246ef8, #00115783, #246ef8, #00115783, #246ef8, #00115783, #246ef8, #00115783, #246ef8, #246ef8, #00115783, #246ef8);
+    background-size: 100% 200%;
+    animation: waveAnimation 8s linear infinite alternate-reverse;
+}
+
+.blueBorder {
+    border: 1px solid transparent;
+    background: linear-gradient(to bottom,
+            #246ef8, #00115783, #246ef8, #00115783, #246ef8, #246ef8, #00115783, #246ef8, #246ef8, #00115783, #246ef8, #00115783, #246ef8, #00115783, #246ef8, #00115783, #246ef8, #00115783, #246ef8, #246ef8, #00115783, #246ef8);
+    background-size: 100% 200%;
+    animation: waveAnimation 8s linear infinite alternate-reverse;
+}
+
+.skyBorder {
+    border: 1px solid transparent;
+    background: linear-gradient(to right,
+            #246ef8, #00115783, #246ef8, #00115783, #246ef8, #246ef8, #00115783, #246ef8, #246ef8, #00115783, #246ef8, #00115783, #246ef8, #00115783, #246ef8, #00115783, #246ef8, #00115783, #246ef8, #246ef8, #00115783, #246ef8);
+    background-size: 800% 100%;
+    animation: gradientBorder 120s linear infinite alternate-reverse;
+}
+
+
+
+.fireBorder {
+    border: 0.1px solid transparent;
+    background: linear-gradient(to left,
+            #440000, #550000, #660000, #770000, #880000,
+            #990000, #AA3300, #BB4400, #CC5500, #DD6600,
+            #EE7700, #FF8800, #FF9900, #FFAA00, #FFBB00,
+            #990000, #AA3300, #BB4400, #CC5500, #DD6600,
+            #440000, #550000, #660000, #770000, #880000);
+    background-size: 1500% 100%;
+    animation: gradientBorder 30s linear infinite alternate;
+}
+
+.heroBorder {
+    border: 0.1px solid transparent;
+    background: linear-gradient(to bottom,
+            #440000, #550000, #660000, #770000, #880000,
+            #990000, #AA3300, #BB4400, #CC5500, #DD6600,
+            #EE7700, #FF8800, #FF9900, #FFAA00, #FFBB00,
+            #990000, #AA3300, #BB4400, #CC5500, #DD6600,
+            #440000, #550000, #660000, #770000, #880000);
+    background-size: 100% 500%;
+
+    animation: waveAnimation 5s linear infinite alternate-reverse;
+}
+
+.barBorder {
+    border: 0.1px solid transparent;
+    background: linear-gradient(to left,
+            #440000, #550000, #660000, #770000, #880000,
+            #990000, #AA3300, #BB4400, #CC5500, #DD6600,
+            #EE7700, #FF8800, #FF9900, #FFAA00, #FFBB00,
+            #990000, #AA3300, #BB4400, #CC5500, #DD6600,
+            #440000, #550000, #660000, #770000, #880000);
+    background-size: 200% 100%;
+    animation: gradientBorder 10s linear infinite alternate-reverse;
+}
+
+.iconBorder {
+    border: 3px solid transparent;
+    background: linear-gradient(to left,
+            #EE7700, #FF8800, #FF9900, #FFAA00, #FFBB00);
+    background-size: 200% 100%;
+    animation: gradientBorder 5s linear infinite alternate-reverse;
+}
+
+@keyframes waveAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 0% 100%;
+    }
+}
+
+@keyframes gradientBorder {
+    0% {
+        background-position: 200% 0%;
+        border-color: transparent;
+    }
+
+    50% {
+        background-position: 0% 0%;
+        border-color: transparent;
+    }
+
+    100% {
+        background-position: -200% 0%;
+        border-color: transparent;
+    }
+}
+
+.barBottom {
+    border: transparent;
+    background: linear-gradient(to left,
+            #000000,
+            #000000,
+            #000000,
+            #000000,
+            #000000,
+            #000000,
+            #FF0000,
+            #FF3300,
+            #FF6600,
+            #FF9900,
+            #FF9900,
+            #FF6600,
+            #FF3300,
+            #FF0000,
+            #FF0000,
+            #FF3300,
+            #FF6600,
+            #000000,
+            #000000,
+            #000000,
+            #000000,
+            #000000);
+
+    background-size: 1800% 200%;
+    animation: gradientBar 15s linear infinite;
+
+
+}
+
+@keyframes gradientBar {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 200% 0%;
+    }
+}
+
+.container {
+    perspective: 1000px;
+    /* Definiert die Perspektive für den 3D-Effekt */
+    width: 300px;
+    /* Passen Sie die Breite des Containers an Ihre Anforderungen an */
+    height: 300px;
+    /* Passen Sie die Höhe des Containers an Ihre Anforderungen an */
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    /* Aktiviert den 3D-Effekt */
+    transition: transform 0.5s ease-in-out;
+    /* Fügt eine sanfte Übergangsanimation hinzu */
+}
+
+.side {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Hintergrundfarbe der Seiten */
+    border: 1px solid #000;
+    /* Optional: Fügt eine Rahmen um die Seiten hinzu */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    /* Optional: Fügt einen Schatten um die Seiten hinzu */
+}
+
+.front {
+    transform: translateZ(50px);
+    /* Verschiebt die Vorderseite um 50px nach vorne */
+}
+
+.left {
+    transform: rotateY(-90deg) translateZ(50px);
+    /* Verschiebt die linke Seite nach links und dreht sie um -90 Grad */
+}
+
+.right {
+    transform: rotateY(90deg) translateZ(50px);
+    /* Verschiebt die rechte Seite nach rechts und dreht sie um 90 Grad */
+}
+
+top {
+    transform: rotateX(90deg) translateZ(50px);
+    /* Verschiebt die obere Seite nach oben und dreht sie um 90 Grad */
+}
+
+.bottom {
+    transform: rotateX(-90deg) translateZ(50px);
+    /* Verschiebt die untere Seite nach unten und dreht sie um -90 Grad */
+}
+
+.back {
+    transform: rotateY(180deg) translateZ(50px);
+    /* Verschiebt die Rückseite um 180 Grad gedreht nach hinten */
+}
