@@ -15,7 +15,7 @@ const ProjectCard = ({ index, initial, name, description, tech, active, image, s
       className=" rounded-2xl mt-10"
       whileHover={{ scale: 1.25, zIndex: 1000, justifySelf: 'center' }}
       whileTap={{ scale: 1, zIndex: 1000 }}
-      transition={{ type: "spring", stiffness: 400, damping: 17 }}>
+      transition={{ type: "spring", stiffness: 100, damping: 17 }}>
 
 
       <Tilt
@@ -36,7 +36,7 @@ const ProjectCard = ({ index, initial, name, description, tech, active, image, s
             layout
             whileTap={{ scale: 3.2 }}
             whileHover={{ scale: 1.5 }}
-            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+            transition={{ type: "spring", stiffness: 100, damping: 17 }}
             data-isopen={isOpen}
           >
             <motion.div layout className="child" />
@@ -81,7 +81,7 @@ const ProjectCard = ({ index, initial, name, description, tech, active, image, s
                               className="box parent"
                               whileHover={{ scale: 2.2 }}
                               whileTap={{ scale: 0.8 }}
-                              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                              transition={{ type: "spring", stiffness: 100, damping: 17 }}
                               data-isopen={isOpen}
                             >
                               <motion.div layout className="child" />
@@ -144,7 +144,7 @@ const ProjectCard = ({ index, initial, name, description, tech, active, image, s
                             className="box parent"
                             whileHover={{ scale: 1.5 }}
                             whileTap={{ scale: 5 }}
-                            transition={{ type: "spring", stiffness: 400, damping: 17 }}
+                            transition={{ type: "spring", stiffness: 100, damping: 17 }}
                             data-isopen={isOpen}
                           >
                             <motion.div layout className="child" />
