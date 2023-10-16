@@ -23,12 +23,11 @@ const ServiceCard = ({ index, title, icon }) => {
     <Tilt
       className={`
         sm:w-[220px]
-        md:w-[300px]
-        w-full rounded-[20px]
-        shadow-indigo-500/10 
-        shadow-2xl hover:shadow-indigo-500/50
+        md:w-[250px]
+        max-w-[250px]
+        w-full rounded-full
         justify-self-center
-        hover:z-30 z-10
+        hover:z-30 z-10 mx-2
       `}
     >
       <motion.div
@@ -37,26 +36,40 @@ const ServiceCard = ({ index, title, icon }) => {
         whileHover={{ scale: 1.3 }}
         whileTap={{ scale: 1.3 }}
         variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-        className="w-full rounded-[20px] "
+        className="w-full rounded-full
+        shadow-indigo-500/10 
+        shadow-xl hover:shadow-none"
       >
-        <div className="oceanBorder p-[0.5px] rounded-3xl ">
+        <div className="p-[0.5px] rounded-full   heroBorder  m-1">
           <div
             options={{
               max: 45,
               scale: 1,
               speed: 300,
             }}
-            className="rounded-[20px] p-8 min-h-[280px]bg-white flex justify-evenly items-center flex-col white-indigo-gradient"
+            className="rounded-full p-8 min-h-[280px] flex justify-evenly items-center flex-col 
+            white-indigo-gradient"
           >
-            <div className="rounded-full border-2 p-[3.5px] oceanBorder w-[130px]  mb-3 justify-between">
-              <img
-                src={icon}
-                alt={title}
-                className="object-contain bg-slate-500 border-[1px] rounded-full py-3"
-              />
-            </div>
+            <motion.div
+              initial={{ opacity: 0, x: -50 }}
+              animate={{ opacity: 1, x: 0 }}
+              whileHover={{ scale: 1.2 }}
+              whileTap={{ scale: 1.5 }}
+              variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+              className=""
+            >
+              <div className="rounded-full border-2 p-[0.1px] blueBorder w-[130px]  mb-3 justify-between">
+                <img
+                  src={icon}
+                  alt={title}
+                  className="object-contain bg-gray-800  rounded-full py-3"
+                />
+              </div>
 
-            <h3 className="font-card t6 text-[20px] font-bold text-center blue-text-gradient about-title pt-14 min-h-[115px]">
+            </motion.div>
+
+
+            <h3 className="font-card t13 text-[20px] font-bold text-center blue-text-gradient about-title pt-14 min-h-[115px]">
               {title}
             </h3>
           </div>
@@ -96,7 +109,7 @@ const About = () => {
       </motion.p>
       <div className="barBottom"></div>
 
-      <div className="mt-20 grid grid-cols-2 md:flex md:flex-wrap gap-2 justify-center z-2">
+      <div className="mt-20 grid grid-cols-1 xs:grid-cols-2 md:flex md:flex-wrap gap-2 justify-center z-2">
         {services.map((service, index) => (
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
