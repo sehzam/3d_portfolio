@@ -63,17 +63,30 @@ const ExperienceCard = ({ experience }) => {
       <h3 className='f19 t19 text-[42px] text-center my-4'>Absolved Knowledge</h3>
       <div className=" grid xs:grid-cols-2 md:grid-cols-3">
         {experience.projects.map((p, index) => (
-          <div key={index} className="skyBorder rounded-2xl m-1">
 
-            <div className="flex flex-col rounded-2xl bg-black h-full">
-              <div className="t11 f04 text-md w-full text-center  mt-3 px-2">
-                <h5 className='f27 t34 text-xs'>{p.name}</h5>
-              </div>
-              <div className="t100 text-center text-xs px-2 w-full my-3">
-                <h5>{p.desc}</h5>
+          <motion.div
+            key={index}
+            initial={{ opacity: 0, x: -50 }}
+            animate={{ opacity: 1, x: 0 }}
+            whileHover={{ scale: 1.5 }}
+            whileTap={{ scale: 2 }}
+            transition={{ type: "spring", stiffness: 100, damping: 17 }}
+            variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
+            className=""
+          >
+            <div className="skyBorder rounded-2xl m-1">
+              <div className="flex flex-col rounded-2xl bg-black h-full">
+                <div className="t11 f04 text-md w-full text-center  mt-3 px-2">
+                  <h5 className='f27 t34 text-xs'>{p.name}</h5>
+                </div>
+                <div className="t100 text-center text-xs px-2 w-full my-3">
+                  <h5>{p.desc}</h5>
+                </div>
               </div>
             </div>
-          </div>
+
+          </motion.div>
+
         ))}
       </div>
 
