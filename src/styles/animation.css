@@ -45,15 +45,14 @@
 
 .heroBorder {
     border: 0.1px solid transparent;
-    background: linear-gradient(to bottom,
-            #440000, #550000, #660000, #770000, #880000,
-            #990000, #AA3300, #BB4400, #CC5500, #DD6600,
-            #EE7700, #FF8800, #FF9900, #FFAA00, #FFBB00,
-            #990000, #AA3300, #BB4400, #CC5500, #DD6600,
-            #440000, #550000, #660000, #770000, #880000);
+    background: linear-gradient(to top,
+            green, #000, green, #000, green, #000, green, #000, green, #000,
+            green, #000, green, #000, green, #000, green, #000, green, #000);
+
+
     background-size: 100% 500%;
 
-    animation: waveAnimation 5s linear infinite alternate-reverse;
+    animation: waveAnimation 15s linear infinite alternate-reverse;
 }
 
 .barBorder {
