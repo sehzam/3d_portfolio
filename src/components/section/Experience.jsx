@@ -67,7 +67,7 @@ const ExperienceCard = ({ experience }) => {
 
             <div className="flex flex-col rounded-2xl bg-black h-full">
               <div className="t11 f04 text-md w-full text-center  mt-3 px-2">
-                <h5 className='f27 t34 text-xl'>{p.name}</h5>
+                <h5 className='f27 t34 text-xs'>{p.name}</h5>
               </div>
               <div className="t100 text-center text-xs px-2 w-full my-3">
                 <h5>{p.desc}</h5>
