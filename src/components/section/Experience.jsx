@@ -15,7 +15,7 @@ const ExperienceCard = ({ experience }) => {
 
       contentStyle={{
         background: '#010009',
-        border: "0.1px solid violet",
+        border: "0.1px solid white",
         borderRadius: "2%",
         padding: "30px",
         color: 'white'
@@ -37,28 +37,39 @@ const ExperienceCard = ({ experience }) => {
 
       <div className='mb-4'>
         <h3
-          className="text-white text-[24px] font-bold f01 t20"
-        >{experience.title}</h3>
-        <p className="t31 text-[16px] font-semibold text-right"><a href={experience.url}>{experience.url}</a></p>
+          className="text-white text-[24px] font-bold f01 t30"
+        >
+          {experience.title}
+        </h3>
+        <p className="t19 text-[16px] font-semibold text-right">
+          <a href={`https://${experience.url}`} target='_blank'>
+            {experience.url}
+          </a>
+        </p>
         <p className="t8 text-[16px] font-semibold"
-          style={{ margin: 0 }}>{experience.company_name}</p>
+          style={{ margin: 0 }}
+        >
+          {experience.company_name}
+        </p>
       </div>
 
       {experience.points.map((p, index) => (
-        <h5 key={index} className='px-2 f94'>{p}</h5>
+        <h5 key={index} className='px-2 f90'>
+          {p}
+        </h5>
       ))}
 
 
       <h3 className='f19 t19 text-[42px] text-center my-4'>Absolved Knowledge</h3>
-      <div className=" grid xs:grid-cols-1 sm:grid-cols-2">
+      <div className=" grid xs:grid-cols-2 md:grid-cols-3">
         {experience.projects.map((p, index) => (
-          <div key={index} className="heroBorder rounded-2xl m-1">
+          <div key={index} className="skyBorder rounded-2xl m-1">
 
             <div className="flex flex-col rounded-2xl bg-black h-full">
-              <div className="t6 f17 text-xl w-full text-center  mt-3">
-                {p.name}
+              <div className="t11 f04 text-md w-full text-center  mt-3 px-2">
+                <h5 className='f27 t34 text-xl'>{p.name}</h5>
               </div>
-              <div className=" text-center px-2 w-full my-3">
+              <div className="t100 text-center text-xs px-2 w-full my-3">
                 <h5>{p.desc}</h5>
               </div>
             </div>
@@ -86,7 +97,7 @@ const Experience = () => {
       </div>
 
       <motion.div
-        variants={fadeIn("", "", 0.1, 1)}
+        variants={fadeIn("right", "spring", 0.7, 0.75)}
         className="mt-4 orange-text-gradient text-[17px] 
       max-w-3xl leading-[30px] text-white">
         <div className="barBottom"></div>
