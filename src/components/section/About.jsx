@@ -69,7 +69,7 @@ const ServiceCard = ({ index, title, icon }) => {
             </motion.div>
 
 
-            <h3 className="font-card t13 text-[20px] font-bold text-center blue-text-gradient about-title pt-14 min-h-[115px]">
+            <h3 className="font-card t18 text-[20px] font-bold text-center blue-text-gradient about-title pt-14 min-h-[115px]">
               {title}
             </h3>
           </div>
