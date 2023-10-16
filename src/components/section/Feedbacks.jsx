@@ -44,7 +44,7 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image, i
               className="my-3"
               whileHover={{ scale: 2 }}
               whileTap={{ scale: 4 }}
-              transition={{ type: "spring", stiffness: 400, damping: 17 }}
+              transition={{ type: "spring", stiffness: 1300, damping: 17 }}
               data-isopen={isOpen}
             >
               <motion.div layout className="child" />
@@ -75,7 +75,6 @@ const Feedbacks = () => {
     mt-12 
     rounded-[20px] 
     border-x 
-    hover:border-none 
     border-indigo-500/5 
     shadow-md
     hover:shadow-indigo-500/50 
