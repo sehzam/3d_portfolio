@@ -27,19 +27,29 @@ const Hero = () => {
         <div className='flex flex-col justify-around'>
           <div className="barBottom"></div>
 
-          <h1
-            className={`${styles.heroHeadText} f05
+          <h5
+            className={`${styles.heroHeadText}
                     text-center ml-10 text-white`}>
-            Greet
             <span
-              className="text-[#D30117] px-10 hero-u">
+              className="t1 f13">
+              Greet
+            </span>
+            <span
+              className="text-[#D30117] px-10 f01">
               U
             </span>
-            I'm
-            <span className="text-[#D30117] px-10 hero-i">
+          </h5>
+          <h5
+            className={`${styles.heroHeadText}
+                      text-center ml-10 text-white`}>
+            <span
+              className="t1 f13">
+              I'm
+            </span>
+            <span className="text-[#D30117] px-10 f01">
               KADIR
             </span>
-          </h1>
+          </h5>
           <div className="barBottom"></div>
 
 
@@ -54,17 +64,28 @@ const Hero = () => {
         </Suspense>
       </div>
       <div className="barBottom"></div>
-
-      <h5 className={`${styles.heroSubText} 
-          text-center  hero-p t5
-          text-white-100 bg-black-200
+      <div className={` 
+          text-center text-3xl
+          text-white-100
           `}>
 
-        I develop and manage
+        <h5 className={` 
+              t4 f13 
+              `}>
+          I provide various
+        </h5>
+        <h3 className={` 
+              t1 f13 
+              `}>
+          Web & WebGL
+        </h3>
+        <h5 className={` 
+          t4 f13 
+          `}>
+          Development methods
+        </h5>
+      </div>
 
-        <br />
-        Web & Mobile applications.
-      </h5>
       <br />
       <div className="barBottom"></div>
 
