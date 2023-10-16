@@ -9,7 +9,7 @@ import Carousel from 'react-bootstrap/Carousel'
 
 const FeedbackCard = ({ index, testimonial, name, designation, company, image, isOpen }) => (
 
-  <motion.div variants={fadeIn("up", "spring", index * 0.5, 0)}>
+  <motion.div>
     <Tilt
       options={{
         max: 45,
@@ -29,14 +29,14 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image, i
     >
       <p className="text-white font-black text-[32px] f17 t100">"</p>
       <div className="mt-1 duration-0">
-        <p className="text-white tracking-wider text-[20px] f23 t88">{testimonial}</p>
+        <p className="text-white tracking-wider text-[14px] md:text-[20px]  f23 t88">{testimonial}</p>
         <div className="mt-7 flex justify-between gap-1">
           <div className="flex-1 flex flex-col items-end justify-between">
 
 
             <div className="flex flex-row">
               <span className="mr-2 t19 text-right">@</span>
-              <span className="text-white">{name}</span>
+              <span className="text-white text-right">{name}</span>
             </div>
             <span className="blue-text-gradient text-right">{designation}</span>
             <motion.div
@@ -44,7 +44,7 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image, i
               className="my-3"
               whileHover={{ scale: 2 }}
               whileTap={{ scale: 4 }}
-              transition={{ type: "spring", stiffness: 1300, damping: 17 }}
+              transition={{ type: "spring", stiffness: 100, damping: 17 }}
               data-isopen={isOpen}
             >
               <motion.div layout className="child" />
