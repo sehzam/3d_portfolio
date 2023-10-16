@@ -26,8 +26,8 @@
 .white-indigo-gradient {
     background: black;
     background-size: cover;
-    background: linear-gradient(90.13deg, #080f2f 65%, rgba(255, 255, 255, 0.581) 58%, rgba(255, 255, 255, 0.561) 52%, black 70%);
-    background: -webkit-linear-gradient(-90.13deg, #080f2f 65%, rgba(255, 255, 255, 0.581) 58%, rgba(255, 255, 255, 0.561) 52%, black 70%);
+    background: linear-gradient(90.13deg, #000000d7 65%, rgba(255, 255, 255, 0.18) 58%, rgba(255, 255, 255, 0.18) 52%, black 70%);
+    background: -webkit-linear-gradient(-90.13deg, #000000d7 65%, rgba(255, 255, 255, 0.18) 58%, rgba(255, 255, 255, 0.18) 52%, black 70%);
     background-size: 200% 100%;
 }
 
