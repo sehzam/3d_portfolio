@@ -14,7 +14,7 @@ const TechCard = ({ icon }) => {
         whileHover={{ scale: 2 }}
         animate={'click'}
         whileTap={{ scale: 5 }}
-        transition={{ type: "spring", stiffness: 400, damping: 17 }}
+        transition={{ type: "spring", stiffness: 100, damping: 17 }}
         data-isopen={isOpen}
       >
         <motion.div layout className="child" />
