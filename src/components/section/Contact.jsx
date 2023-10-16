@@ -62,15 +62,13 @@ const Contact = () => {
     ).then(() => {
       setLoading(false)
 
-      setForm({
-        name: "",
-        email: "",
-        message: "",
-      }, (error) => {
-        setLoading(false)
-        console.log(error)
-        alert("Something went wrong.")
-      })
+
+    })
+
+    setForm({
+      name: "",
+      email: "",
+      message: "",
     })
     openModal()
     setLoading(false)
@@ -106,6 +104,7 @@ const Contact = () => {
           <label className="flex flex-col w-full">
             <span className="text-white font-medium mb-4">Your Name</span>
             <input
+              required
               type="text"
               name="name"
               value={form.name}
@@ -121,6 +120,7 @@ const Contact = () => {
           <label className="flex flex-col w-full">
             <span className="text-white font-medium mb-4">Your Email </span>
             <input
+              required
               type="email"
               name="email"
               value={form.email}
@@ -137,6 +137,7 @@ const Contact = () => {
           <label className="flex flex-col w-full">
             <span className="text-white font-medium mb-4">Your Message</span>
             <textarea
+              required
               cols='20'
               rows="10"
               name="message"
@@ -145,19 +146,22 @@ const Contact = () => {
               style={{ resize: 'none', overflow: 'hidden' }}
               placeholder="What want you tell me? Thanks a lot for your Feedback!"
               className="
-                      bg-[#171A1E] py-4 px-6 text-white 
-                      rounded-lg outlined-none border-none font-medium 
-                      placeholder:text-secondary
-                      shadow-2xl hover:shadow-indigo-500/50 duration-1000
-                      "/>
+                        bg-[#171A1E] py-4 px-6 text-white 
+                        rounded-lg outlined-none border-none font-medium 
+                        placeholder:text-secondary
+                        shadow-2xl hover:shadow-indigo-500/50 duration-1000
+                        "/>
           </label>
           <br />
           {/* BUTTON */}
           <TERipple rippleColor="white">
-            <button
-              onClick={handleSubmit}
-              type="submit"
-              className="
+            {form.name.trim() !== ''
+              && form.email.trim() !== ''
+              && form.message.trim() !== '' ? (
+              <button
+                onClick={handleSubmit}
+                type="submit"
+                className="
               bg-gray-900/50
               mt-4 
               py-3 
@@ -171,10 +175,34 @@ const Contact = () => {
               shadow-2xl 
               hover:shadow-indigo-500
               duration-1000
-              ">
-              {loading ? 'Sending...' : 'Send'}
-            </button>
+              "
 
+              >
+                {loading ? 'Sending...' : 'Send'}
+              </button>
+            ) : (
+              <button
+                disabled
+                className="
+            bg-gray-900/50
+            mt-4 
+            py-3 
+            px-8 
+            hover:bg-gray-900/100
+            outline-none 
+            w-fit 
+            text-white 
+            font-bold 
+            rounded-full
+            shadow-2xl 
+            hover:shadow-indigo-500
+            duration-1000
+            "
+
+              >
+                fill me
+              </button>
+            )}
           </TERipple>
         </form>
       </div>
