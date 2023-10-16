@@ -554,9 +554,7 @@ export const Resume = ( ) = > (
 )
             `
     )
-    const [codeConstant, setCodeConstant] = useState(
-
-        `
+    const [codeConstant, setCodeConstant] = useState(`
 import {
     logo,
     bash,
@@ -868,27 +866,23 @@ const statements = [
         github_url: "https://www.github.com/sehzam",
         statement: "Let's work together to bring your ideas to life!",
         sentences: [
-            "I'm a skilled software developer 
-            with experience in TypeScript and JavaScript.",
-            "Also expertised in frameworks like 
-            React, Node.JS, and Three.js.",
-            "To create efficient, scalable, 
-            and user-friendly solutions.",
-            "I'm a quick learner and collaborate closely 
-            with clients that solve real-world problems."
+            "I'm a skilled software developer with experience in TypeScript and JavaScript.",
+            "Also expertised in frameworks like React.JS, Node.JS, and Three.JS .",
+            "To create efficient, scalable, and user-friendly solutions.",
+            "I'm a quick learner and collaborate closely with clients that solve real-world problems."
         ],
     },
 ]
 const experiences = [
     {
         title: "Full Stack Developer",
-        company_name: "SEHNET",
+        company_name: "Sehnet",
         icon: logo,
         date: "Jan 2018 - Present",
         type: "Projects",
         points: [
             "Developing a bunch of projects",
-            "Exploration and applying technologies",
+            "Explore & apply newest technologies",
         ],
     },
     {
@@ -904,8 +898,8 @@ const experiences = [
     },
 ]
 
-export { companies, languages, technologies, education, statements, experiences, information }
-        `
+export { companies, languages, technologies, education, statements, experiences, information }        
+`
     )
 
     return (
