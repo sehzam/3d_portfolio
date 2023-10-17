@@ -68,8 +68,8 @@ const ExperienceCard = ({ experience }) => {
             key={index}
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
-            whileHover={{ scale: 1.5 }}
-            whileTap={{ scale: 2 }}
+            whileHover={{ scale: 1.35 }}
+            whileTap={{ scale: 1.5 }}
             transition={{ type: "spring", stiffness: 100, damping: 17 }}
             variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
             className=""
@@ -109,7 +109,7 @@ const Experience = () => {
         </h2>
       </div>
 
-      <motion.div
+      <div
         variants={fadeIn("right", "spring", 0.7, 0.75)}
         className="mt-4 orange-text-gradient text-[17px] 
       max-w-3xl leading-[30px] text-white">
@@ -120,7 +120,7 @@ const Experience = () => {
         <br />
         <div className="barBottom"></div>
 
-      </motion.div>
+      </div>
       <VerticalTimeline>
         {experiences.map((experience, index) => (
           <ExperienceCard key={index} experience={experience} />

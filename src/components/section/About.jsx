@@ -31,6 +31,7 @@ const ServiceCard = ({ index, title, icon }) => {
       `}
     >
       <motion.div
+        transition={{ type: "spring", stiffness: 100, damping: 17 }}
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
         whileHover={{ scale: 1.3 }}
@@ -51,6 +52,7 @@ const ServiceCard = ({ index, title, icon }) => {
             white-indigo-gradient"
           >
             <motion.div
+              transition={{ type: "spring", stiffness: 100, damping: 17 }}
               initial={{ opacity: 0, x: -50 }}
               animate={{ opacity: 1, x: 0 }}
               whileHover={{ scale: 1.2 }}
@@ -83,14 +85,17 @@ const ServiceCard = ({ index, title, icon }) => {
 const About = () => {
   return (
     <div>
-      <motion.div variants={fadeIn()}>
+      <div
+        variants={fadeIn("right", "spring", 0.5, 0.75)}
+
+      >
         <p className={`${styles.sectionSubText} section-p`}>Introduction</p>
         <h2 className={`${styles.sectionHeadText} section-h2`}> Overview </h2>
         <div className="barBottom"></div>
-      </motion.div>
+      </div>
 
 
-      <motion.p variants={fadeIn("", "", 0.1, 1)} className="mt-4 orange-text-gradient text-[17px] max-w-3xl leading-[30px] text-white">
+      <p variants={fadeIn("", "", 0.1, 1)} className="mt-4 orange-text-gradient text-[17px] max-w-3xl leading-[30px] text-white">
         I'm a skilled software developer with experience in TypeScript and JavaScript,
         and expertise in frameworks like React, Node.JS, and Three.js.
         <br />
@@ -106,7 +111,7 @@ const About = () => {
         Let's work together to bring your ideas to life!
 
         <br />
-      </motion.p>
+      </p>
       <div className="barBottom"></div>
 
       <div className="mt-20 grid grid-cols-1 xs:grid-cols-2 md:flex md:flex-wrap gap-2 justify-center z-2">

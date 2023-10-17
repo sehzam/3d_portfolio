@@ -188,10 +188,10 @@ const Works = () => {
       <p className={`${styles.sectionSubText} work-p`}>
         My work
       </p>
-      <h2 className={`${styles.sectionHeadText} work-h2`}> Projects </h2>
+      <h2 className={`${styles.sectionHeadText} work-h2 mb-5`}> Projects </h2>
       <div className="barBottom"></div>
-
       <div className="w-full flex t04">
+
         <p
           className="mt-3 text-[17px] max-w-3xl leading-[30px] orange-text-gradient "
         >

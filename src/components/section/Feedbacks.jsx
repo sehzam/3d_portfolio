@@ -9,22 +9,26 @@ import Carousel from 'react-bootstrap/Carousel'
 
 const FeedbackCard = ({ index, testimonial, name, designation, company, image, isOpen }) => (
 
-  <motion.div>
+  <motion.div
+    className='   my-20'
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.7 }}
+    transition={{ type: "spring", stiffness: 100, damping: 17 }}>
     <Tilt
       options={{
         max: 45,
         scale: 1,
-        speed: 100
+        speed: 0.1
       }}
-      className='mt-10 p-6 rounded-3xl mx-20 mb-24 md:mx-40 md:mb-40
-      hover:shadow-2xl 
-      hover:shadow-indigo-500/50
+      className='mt-10 p-2 text-center rounded-3xl mx-10 mb-24 md:mx-40 md:mb-40 lg:mx-56 lg:mb-56 xl:mx-70 xl:mb-70 
+      hover:shadow-2xl  
       shadow-indigo-500/40 
       hover:border-y-indigo-600/80 
       border-y-indigo-600/20 
       bg-slate-950/80
       border-y
       hover:z-30 z-10
+   
       '
     >
       <p className="text-white font-black text-[32px] f17 t100">"</p>
@@ -62,6 +66,7 @@ const FeedbackCard = ({ index, testimonial, name, designation, company, image, i
         </div>
       </div>
     </Tilt >
+
   </motion.div>
 )
 
