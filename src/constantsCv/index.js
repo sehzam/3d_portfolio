@@ -70,7 +70,7 @@ const information = {
 
     name: "Kadir Duran",
     address: "Berlin-Germany",
-    email: "kadurcey@gmail.com",
+    email: "sehzam@gmail.com",
     phone: "00 (49) 175 xx xx 769",
     stack: [
         html,
