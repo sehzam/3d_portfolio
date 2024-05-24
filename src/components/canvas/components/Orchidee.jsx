@@ -5,14 +5,13 @@ import { Canvas } from "@react-three/fiber"
 import CanvasLoader from '../../section/Loader'
 
 const Orchidee = ({ isMobile }) => {
-  // const erde = useGLTF('models/animal/shiba/scene.gltf')
   const orchidee = useGLTF('orchid_flower/scene.gltf')
   // alert(isMobile)
   return (
     <primitive
       object={orchidee.scene}
-      scale={isMobile ? 0.3 : 0.3}
-      position={isMobile ? [0, -1.8, 0] : [0, -1.8, 0]}
+      scale={isMobile ? 2 : 2}
+      position={isMobile ? [0, 0, 0] : [0, 0, 0]}
       rotation={isMobile ? [0, 0, 0] : [0, 0, 0]}
     />
   )
